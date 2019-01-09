@@ -39,7 +39,7 @@ RUN set -x && \
     make install V=0 && \
     # Build PageSpeed:
     # Check https://github.com/pagespeed/ngx_pagespeed/releases for the latest version
-    PAGESPEED_VERSION=1.11.33.3 && \
+    PAGESPEED_VERSION=1.13.35.2 && \
     cd /tmp && \
     curl -L https://dl.google.com/dl/linux/mod-pagespeed/tar/beta/mod-pagespeed-beta-${PAGESPEED_VERSION}-r0.tar.bz2 | tar -jx && \
     curl -L https://github.com/pagespeed/ngx_pagespeed/archive/v${PAGESPEED_VERSION}-beta.tar.gz | tar -zx && \
